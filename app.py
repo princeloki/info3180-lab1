@@ -11,9 +11,10 @@ app = Flask(__name__)
 def home():
     return 'My home page'
 
-# @app.route('/home')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
-# @app.route('Myhomepage')
 
 @app.errorhandler(404)
 def page_not_found(error):
