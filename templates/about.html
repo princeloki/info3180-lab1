@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}">
 </head>
 <body>
-    <h1>Place Your Name Here</h1>
-    <p>Write a short paragraph about yourself here</p>
+    <h1>Teriq Strachan</h1>
+    <p>
+        My name is Teriq Strachan. I am an aspiring software engineer
+        and anime otaku/japoniphile. In the future I would like to live
+        in Japan and work as an IOS developer. 
+    </p>
+    <img src="{{ url_for('static', filename='japan.jpg')}}" alt="Japan">
 </body>
 </html>
